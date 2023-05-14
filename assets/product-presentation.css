@@ -1,5 +1,125 @@
-.product-present__wrap{
-    height: 440px;
-    background: linear-gradient(96.65deg, #5AC0B3 -2.35%, #A6DDBF 103.93%);
+:root {
+  --main-bg-color: rgba(81, 81, 81, 1);
+  --main-text-color: rgba(254, 254, 254, 1);
+  --gray-text-color: rgba(81, 81, 81, 1);
+}
 
+.product-present {
+  background: linear-gradient(96.65deg, #5ac0b3 -2.35%, #a6ddbf 103.93%);
+}
+.product-present__wrap {
+  min-height: 440px;
+  height: auto;
+  color: var(--main-text-color);
+  position: relative;
+  box-sizing: border-box;
+  padding: 80px 60px 0 65px;
+}
+.product-present__wrap::after {
+  content: " ";
+  background-image: url("https://cdn.shopify.com/s/files/1/0765/4067/4355/files/Rectangle12.png?v=1684054149");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+
+  width: 86%;
+  height: 400px;
+  position: absolute;
+  top: -67px;
+  left: 0;
+}
+
+.product-present__wrap {
+  display: flex;
+  flex-direction: row;
+}
+.product-present__img-box,
+.product-present__text-box,
+.product-present__bid-img-box {
+  z-index: 2;
+}
+.product-present__img-box,
+.product-present__text-box {
+  padding-bottom: 30px;
+}
+.product-present__circle1 {
+  width: 325px;
+  height: 325px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.product-present__circle2 {
+  width: 291.4px;
+  height: 291.4px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: auto auto;
+  margin-top: 16px;
+}
+.product-present__circle3 {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: linear-gradient(92.47deg, #68b7a8 1.88%, #98d8bd 99.27%);
+  transform: matrix(-1, 0.08, 0.08, 1, 0, 0);
+  background-image: url("https://cdn.shopify.com/s/files/1/0765/4067/4355/files/Ellipse7.png?v=1684056952");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+.product-present__img-box {
+  position: relative;
+  width: 325px;
+  height: 325px;
+}
+.product-present__img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 110px);
+  top: calc(50% - 152px);
+  margin: 0 auto;
+  width: 223.28px;
+  height: 304px;
+  z-index: 3;
+}
+.product-present__text-box {
+  max-width: 538px;
+  text-align: right;
+  margin-right: 120px;
+}
+
+.product-present__link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  margin-bottom: 15px;
+}
+
+.product-present__bid-img-box {
+  position: relative;
+  width: 350px;
+}
+.product-present__bid-img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 412.57px;
+  height: 568px;
+}
+.product-present__title {
+  margin-bottom: 30px;
+}
+.product-present__prise {
+  margin-top: 12px;
+  color: var(--gray-text-color);
+}
+.product-present__txt {
+  margin-top: 20px;
 }

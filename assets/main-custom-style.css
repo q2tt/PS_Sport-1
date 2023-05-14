@@ -1,4 +1,39 @@
-.custom-container{
-    width: 1440px;
-    margin: 0 auto;
+.custom-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.custom-big-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0;
+}
+.custom-link-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 112.02%;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+}
+
+.custom-prise-txt {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 112.02%;
+  letter-spacing: -0.05em;
+  text-transform: capitalize;
+  text-shadow: 3px 0px 3px rgba(201, 201, 201, 0.25);
+  margin: 0;
+}
+
+.custom-big-txt {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: right;
+  text-transform: capitalize;
+  margin: 0;
 }
