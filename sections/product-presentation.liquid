@@ -1,25 +1,59 @@
-{{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 {{ 'main-custom-style.css' | asset_url | stylesheet_tag }}
+{{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 
-
-
-
-
+<div class="product-present">
   <div class="product-present__wrap custom-container">
+    <div class="product-present__img-box">
+         <img class="product-present__img" src="{{section.settings.product_img | img_url: 'large'}}" alt="{{settings.product_img.alt_text}}">
+               
+        <div class="product-present__circle1">
+            <div class="product-present__circle2">
+                <div class="product-present__circle3">
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <div class="product-present__text-box">
+        <h2 class="custom-big-title product-present__title">{{section.settings.section_title | capitalize}}</h2>
+
+        <a class="custom-link-title product-present__link" href="{{section.settings.product.url}}">{{section.settings.product.title}}</a>
+        
+        <p class="custom-prise-txt product-present__prise">$ {{section.settings.product.price | money_without_currency}}</p> 
+        <p class="custom-big-txt product-present__txt">{{section.settings.product.description}}</p>
+    </div>
+    <div class="product-present__bid-img-box">
+        <img class="product-present__bid-img" src="{{section.settings.product_big_img | img_url: 'large'}}" alt="{{settings.product_img.alt_text}}">
+         
+    </div>
   </div>
-  
+</div>
   {% schema %}
   {
     "name": "Product presentation",
     "tag": "section",
     "class": "section",
     "settings": [
+    {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "JISOO FROM BLACKPINK"
+      },
+    {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
       {
-        "type": "checkbox",
-        "id": "include_margins",
-        "default": true,
-        "label": "t:sections.apps.settings.include_margins.label"
+        "type": "image_picker",
+        "id": "product_img",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "product_big_img",
+        "label": "Image"
       }
     ],
     "blocks": [
