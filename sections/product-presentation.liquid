@@ -1,0 +1,35 @@
+{{ 'product-presentation.css' | asset_url | stylesheet_tag }}
+{{ 'main-custom-style.css' | asset_url | stylesheet_tag }}
+
+
+
+
+
+  <div class="product-present__wrap custom-container">
+
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Product presentation",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "include_margins",
+        "default": true,
+        "label": "t:sections.apps.settings.include_margins.label"
+      }
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [
+      {
+        "name": "Product presentation"
+      }
+    ]
+  }
+  {% endschema %}
+  
