@@ -12,19 +12,15 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="product-present__text-box">
-        <h2 class="custom-big-title product-present__title">{{section.settings.section_title | capitalize}}</h2>
-
+        <h2 class="custom-big-title product-present__title">{{section.settings.section_title}}</h2>
         <a class="custom-link-title product-present__link" href="{{section.settings.product.url}}">{{section.settings.product.title}}</a>
-        
         <p class="custom-prise-txt product-present__prise">$ {{section.settings.product.price | money_without_currency}}</p> 
         <p class="custom-big-txt product-present__txt">{{section.settings.product.description}}</p>
     </div>
     <div class="product-present__bid-img-box">
         <img class="product-present__bid-img" src="{{section.settings.product_big_img | img_url: 'large'}}" alt="{{settings.product_img.alt_text}}">
-         
     </div>
   </div>
 </div>
@@ -53,7 +49,7 @@
       {
         "type": "image_picker",
         "id": "product_big_img",
-        "label": "Image"
+        "label": "Big image"
       }
     ],
     "blocks": [
