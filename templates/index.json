@@ -42,7 +42,9 @@
     "336e9a51-ad4e-4b6f-963d-fdfac60ea79b": {
       "type": "product-presentation",
       "settings": {
-        "include_margins": true
+        "product": "red-sweatshirt",
+        "product_img": "shopify:\/\/shop_images\/image3.png",
+        "product_big_img": "shopify:\/\/shop_images\/image_2-PhotoRoom.png-PhotoRoom_1.png"
       }
     },
     "featured_collection": {
@@ -71,11 +73,60 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "65511c20-d2fc-4345-9cee-477dee8ccd5d": {
+      "type": "collage",
+      "blocks": {
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-0": {
+          "type": "image",
+          "settings": {}
+        },
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-0",
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-1",
+        "template--19089286955315__65511c20-d2fc-4345-9cee-477dee8ccd5d-168412668200afcb9a-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "639d9f22-ee4e-419d-a39d-41c7e67420c1": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "336e9a51-ad4e-4b6f-963d-fdfac60ea79b",
-    "featured_collection"
+    "featured_collection",
+    "65511c20-d2fc-4345-9cee-477dee8ccd5d",
+    "639d9f22-ee4e-419d-a39d-41c7e67420c1"
   ]
 }
