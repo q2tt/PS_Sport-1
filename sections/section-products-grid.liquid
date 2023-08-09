@@ -1,0 +1,97 @@
+
+<div class="custom-content-container">
+  {% if section.settings.title != blank %}
+  <h2 class="custom-section-title ">{{section.settings.title}}</h2>
+  {% endif %}
+ 
+  <div class="products-grid__wrap">
+    
+    {% for product in section.settings.collection.products %}
+      <div class="card-product nth-{{forloop.index}} ">
+          <div class="card-product__info-box"> 
+            <h3 class="card-product__h3 title_hov">
+              <a class="product-title title_hov" href="{{product.url}}">{{product.title}}</a>
+            </h3>
+            <p class="card-product__price smal-txt">Pricing {{product.price | money }}</p>
+
+
+            <div>like <button> l </button> </div>
+
+          </div>
+
+          {% if forloop.index == 1 %}
+            <div class="card-product__big-box">
+              <a class="card-product__link" href="{{product.url}}"> </a>
+              <img class="card-product__big-img" 
+               
+                src="{{product.featured_image | img_url: '420x500' }}" alt=""
+                loading="lazy" >
+                
+            </div>
+              
+
+            {% else %}
+
+
+            <div class="card-product__img-box">
+              <a  class="card-product__link" href="{{product.url}}"></a>
+              <div class="card-product__type">
+                {% if product.metafields.global.type != blank %}
+               <p class="txt-metefilds"> {{ product.metafields.global.type.value }} </p>
+                {% endif %}
+              </div>
+              <div class="card-product__icons">
+                {% if product.tags contains "new" %}
+                    <p class="product-tag__new">
+                    new
+                    </p>
+               {% endif %}
+              
+  
+              </div>
+              
+                <img class="card-product__img" 
+                src="{{product.featured_image  | img_url: '250x116'}}" alt="">
+             
+              
+            </div>
+          {% endif %}
+         
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{{ 'main-custom-style.css' | asset_url | stylesheet_tag }}
+{{ 'section-products-grid.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Products grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  {
+    "type": "text",
+    "id": "title",
+    "label": "Title",
+    "default": "Top"
+  },
+  {
+    "type": "collection",
+    "id": "collection",
+    "label": "Collection"
+  }
+  ],
+  "blocks": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Products grid"
+    }
+  ]
+}
+{% endschema %}

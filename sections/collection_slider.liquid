@@ -1,0 +1,52 @@
+{{ 'collection_slider.css' | asset_url | stylesheet_tag }}
+
+<div class="content">
+    <div class="slider variable-width">
+      <div class="item" style="width: 1000px;">
+        <!-- <p>1</p> -->
+        <div class="slider__content-box">aaaaa1</div>
+      </div>
+      <div class="item" style="width: 1000px;">
+        <!-- <p>2</p> -->
+        <div class="slider__content-box">2aaaaa</div>
+      </div>
+      <div class="item" style="width: 1000px;">
+        <!-- <p>3</p> -->
+        <div class="slider__content-box">3aaaaa</div>
+      </div>
+     
+  </div>
+  </div>
+  
+
+<script>
+   $('.variable-width').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+
+</script>
+
+
+  {% schema %}
+  {
+    "name": "Collection slider",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+     
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [
+      {
+        "name": "Collection slider"
+      }
+    ]
+  }
+  {% endschema %}

@@ -39,39 +39,15 @@
         "show_text_below": false
       }
     },
-    "336e9a51-ad4e-4b6f-963d-fdfac60ea79b": {
-      "type": "product-presentation",
-      "settings": {
-        "product": "red-sweatshirt",
-        "product_img": "shopify:\/\/shop_images\/image3.png",
-        "product_big_img": "shopify:\/\/shop_images\/image_2-PhotoRoom.png-PhotoRoom_1.png"
-      }
+    "cf2c9db2-4245-4584-b816-957ef2da53f7": {
+      "type": "collection_slider",
+      "settings": {}
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "ad756a36-74cb-4aa4-89bb-b3c761348268": {
+      "type": "section-products-grid",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "title": "Top",
+        "collection": "top"
       }
     },
     "65511c20-d2fc-4345-9cee-477dee8ccd5d": {
@@ -111,6 +87,42 @@
         "padding_bottom": 36
       }
     },
+    "336e9a51-ad4e-4b6f-963d-fdfac60ea79b": {
+      "type": "product-presentation",
+      "settings": {
+        "section_title": "JISOO FROM BLACKPINK",
+        "product": "red-sweatshirt",
+        "product_img": "shopify:\/\/shop_images\/image3.png",
+        "product_big_img": "shopify:\/\/shop_images\/image_2-PhotoRoom.png-PhotoRoom_1.png"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
     "639d9f22-ee4e-419d-a39d-41c7e67420c1": {
       "type": "contact-form",
       "settings": {
@@ -124,9 +136,11 @@
   },
   "order": [
     "image_banner",
+    "cf2c9db2-4245-4584-b816-957ef2da53f7",
+    "ad756a36-74cb-4aa4-89bb-b3c761348268",
+    "65511c20-d2fc-4345-9cee-477dee8ccd5d",
     "336e9a51-ad4e-4b6f-963d-fdfac60ea79b",
     "featured_collection",
-    "65511c20-d2fc-4345-9cee-477dee8ccd5d",
     "639d9f22-ee4e-419d-a39d-41c7e67420c1"
   ]
 }
