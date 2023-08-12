@@ -39,6 +39,70 @@
         "show_text_below": false
       }
     },
+    "1b8a8759-d42d-428d-b26b-f9d19cc1936f": {
+      "type": "slider-reviews",
+      "blocks": {
+        "1002de1e-a3c1-4cd6-8327-830cccf8af6a": {
+          "type": "review",
+          "settings": {
+            "name": "Julia Jancroll",
+            "text": "Found ideal sports shoes—comfortable, durable, and versatile. A go-to for all my workouts.",
+            "customers_photo": "shopify:\/\/shop_images\/Frame_15.png"
+          }
+        },
+        "cdc0f605-53a2-4803-a845-7b6518be07ff": {
+          "type": "review",
+          "settings": {
+            "name": "Mike Milanko",
+            "text": "Trendy yet functional sports shoes. Effortless style, enhanced workouts. My new favorites.",
+            "customers_photo": "shopify:\/\/shop_images\/premium_photo-1664036154109-31e0624d29c7.jpg"
+          }
+        },
+        "62fc3c59-0ad9-4519-8101-9e7d55fc268b": {
+          "type": "review",
+          "settings": {
+            "name": "Victoria",
+            "text": "Fast delivery, perfect fit. These sports shoes transformed my workouts. Thrilled customer.",
+            "customers_photo": "shopify:\/\/shop_images\/Frame_16.png"
+          }
+        },
+        "99a88495-a3bb-4fb2-b193-fed028cb95e5": {
+          "type": "review",
+          "settings": {
+            "name": "Anton",
+            "text": "These sports shoes enhance every stride. Elevating workouts, setting new records. Worth every penny.",
+            "customers_photo": "shopify:\/\/shop_images\/istockphoto-1392528328-170667a.webp"
+          }
+        },
+        "455d4a23-f2c9-4cdd-9dca-eb585c9e006a": {
+          "type": "review",
+          "settings": {
+            "name": "Sara Casie",
+            "text": "Top-notch sports shoes for every activity. Easy shopping, exceptional performance. A must-visit online shop.",
+            "customers_photo": "shopify:\/\/shop_images\/Frame_17.png"
+          }
+        },
+        "5c860788-98eb-4451-92a7-7a3ccf940eb7": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "name": "ff",
+            "text": "Review..."
+          }
+        }
+      },
+      "block_order": [
+        "1002de1e-a3c1-4cd6-8327-830cccf8af6a",
+        "cdc0f605-53a2-4803-a845-7b6518be07ff",
+        "62fc3c59-0ad9-4519-8101-9e7d55fc268b",
+        "99a88495-a3bb-4fb2-b193-fed028cb95e5",
+        "455d4a23-f2c9-4cdd-9dca-eb585c9e006a",
+        "5c860788-98eb-4451-92a7-7a3ccf940eb7"
+      ],
+      "settings": {
+        "title": "Customer reviews"
+      }
+    },
     "cf2c9db2-4245-4584-b816-957ef2da53f7": {
       "type": "collection_slider",
       "settings": {}
@@ -136,6 +200,7 @@
   },
   "order": [
     "image_banner",
+    "1b8a8759-d42d-428d-b26b-f9d19cc1936f",
     "cf2c9db2-4245-4584-b816-957ef2da53f7",
     "ad756a36-74cb-4aa4-89bb-b3c761348268",
     "65511c20-d2fc-4345-9cee-477dee8ccd5d",
