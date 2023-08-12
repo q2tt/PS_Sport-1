@@ -1,0 +1,134 @@
+{{ 'reviews-slider.css' | asset_url | stylesheet_tag }}
+
+
+<div class="reviews-slider__container">
+  <div class="custom-content-container">
+    <div class="reviews-slider">
+      <div class="reviews-slider__q-img">
+        {%- render 'quote-svg' -%}
+        {%- render 'quote-svg' -%}
+      </div>
+      <div class="reviews-slider__content-wrap">
+        {% if section.settings.title != blank %}
+          <h2 class="custom-section-title reviews-slider__title">{{section.settings.title }}</h2>
+        {% endif %}
+        <div class="content">
+          <div class="slider autoplay">
+            {% for block in section.blocks %}
+            {% if block.settings.name != blank and block.settings.text != blank %}
+            <div>
+              <div class="review__slide">
+                {% if block.settings.customers_photo != blank %}
+                <div class="review__img-box">
+                  <img src="{{block.settings.customers_photo| img_url: 'large'}}" alt="customers photo">
+                </div>
+                {% endif %}
+
+                <div class="review__content-box">
+                  <div class="review__small-img">
+                    {%- render 'quote-svg' -%}
+                    {%- render 'quote-svg' -%}
+                  </div>
+                  <div class="review__text-box">
+                    <h4 class="smal-txt-b">{{block.settings.name}}</h4>
+                    <p class="smal-txt">
+                      {{block.settings.text}} </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% endif %}
+            {% endfor %}
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $(".autoplay").slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    $('.slider').on('afterChange', function (event, slick, currentSlide) {
+      $('.slick-slide').removeClass('main-slide-active');
+      addActiveClass()
+    });
+
+    function addActiveClass() {
+      var activeElements = document.querySelectorAll('.slick-track .slick-active');
+      var secondActiveElement = $('.slick-track .slick-active:eq(1)');
+      secondActiveElement.addClass('main-slide-active');
+    }
+
+    addActiveClass()
+
+  });
+
+
+
+</script>
+{% schema %}
+{
+  "name": "Slider reviews",
+  "tag": "section",
+  "class": "section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+}
+],
+"blocks": [
+{
+"type": "review",
+"name": "review",
+"settings": [
+{
+"type": "text",
+"id": "name",
+"label": "Customers name"
+},
+{
+"type": "textarea",
+"id": "text",
+"label": "Review",
+"default": "Review..."
+},
+{
+"type": "image_picker",
+"id": "customers_photo",
+"label": "Image"
+}
+
+
+]
+}
+],
+"presets": [
+{
+"name": "Slider reviews"
+}
+]
+}
+{% endschema %}

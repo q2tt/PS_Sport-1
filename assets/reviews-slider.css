@@ -1,0 +1,229 @@
+.reviews-slider .content {
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+.review__slide {
+    width: 335px;
+    min-height: 188px;
+    background-color: var(--gray-bg-slider);
+    box-shadow: 20px 20px 25px 0px rgba(30, 30, 30, 0.17);
+    margin: 0 auto;
+    padding: 0 69px 0 36px;
+    margin-top: 30px;
+}
+
+.review__small-img svg {
+    padding-right: 5px;
+    width: 15px;
+    height: 16px;
+}
+
+.review__small-img {
+    width: 34px;
+    display: flex;
+}
+
+.review__content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+}
+
+.review__img-box {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -29px;
+}
+
+.review__img-box img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.review__text-box {
+    max-width: 197px;
+    color: var(--main-text-color);
+}
+
+.review__text-box p {
+    line-height: normal;
+}
+
+.review__text-box h4 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.reviews-slider .slick-dots li button:before {
+    opacity: 1;
+    color: #d3eec4;
+    font-size: 21px;
+}
+
+.reviews-slider .slick-dots li.slick-active button:before {
+    color: var(--green-hover);
+    opacity: 1;
+}
+
+.reviews-slider .slick-prev,
+.reviews-slider .slick-next {
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: rgb(105, 186, 170);
+    background: linear-gradient(90deg,
+            rgba(105, 186, 170, 0.9) 0%,
+            rgba(155, 216, 188, 0.9) 100%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px #ffffff82;
+}
+
+.reviews-slider .slick-prev:hover,
+.reviews-slider .slick-next:hover {
+    box-shadow: 0px 0px 9px 0px #ffffffb0;
+}
+
+.reviews-slider .slick-prev {
+    right: 100px;
+    left: auto;
+    top: -40px;
+}
+
+.reviews-slider .slick-next {
+    right: 10px;
+    top: -60px;
+    transform: rotate(180deg);
+}
+
+.reviews-slider .slick-slider .slick-prev::before {
+    padding-right: 4px;
+    content: url("https://cdn.shopify.com/s/files/1/0765/4067/4355/files/b230f59911b8d228791f36d23900d5ce.png?v=1691591625");
+}
+
+.reviews-slider .slick-slider .slick-next::before {
+    padding-right: 4px;
+    content: url("https://cdn.shopify.com/s/files/1/0765/4067/4355/files/b230f59911b8d228791f36d23900d5ce.png?v=1691591625");
+}
+
+.slick-track {
+    padding-bottom: 50px;
+}
+
+.main-slide-active .review__slide {
+    background-color: var(--dark-gray-slider);
+    transition: all 1.1s ease-out;
+}
+
+.reviews-slider__q-img {
+    height: 141px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.reviews-slider__q-img svg {
+    height: 141px;
+    width: auto;
+    margin-right: 36px;
+}
+
+.reviews-slider__q-img path {
+    fill: #525252;
+}
+
+.reviews-slider__container {
+    background: #464646;
+    padding-bottom: 130px;
+}
+
+.reviews-slider {
+    position: relative;
+}
+
+.reviews-slider__title {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.reviews-slider__content-wrap {
+    padding-top: 75px;
+}
+
+.slick-dots {
+    bottom: -75px;
+}
+
+@media (max-width: 1199.98px) {
+    .review__slide {
+        width: auto;
+        padding: 0 39px 0 36px;
+    }
+
+    .slick-slide {
+        padding: 0 14px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .review__slide {
+        width: 80%;
+    }
+
+    .review__text-box {
+        width: auto;
+        padding-left: 16px;
+        max-width: none;
+    }
+
+    .reviews-slider__q-img {
+        height: 100px;
+        width: 260px;
+    }
+
+    .reviews-slider__q-img svg {
+        height: 100px;
+        margin-right: 16px;
+    }
+
+    .reviews-slider__content-wrap {
+        padding-top: 30px;
+    }
+
+    .reviews-slider__title {
+        text-align: center;
+    }
+
+    .reviews-slider .slick-prev {
+        top: -20px;
+    }
+
+    .reviews-slider .slick-next {
+        top: -37px;
+        right: 20px;
+    }
+
+    .reviews-slider .slick-prev,
+    .reviews-slider .slick-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slick-dots {
+        bottom: -25px;
+    }
+
+    .reviews-slider__container {
+        padding-bottom: 30px;
+    }
+}
