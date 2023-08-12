@@ -1,8 +1,5 @@
 
-:root {
-  --green-hover: rgba(23, 138, 134, 1);
-  
-}
+
 .custom-container {
   max-width: 1440px;
   width: auto;
@@ -29,10 +26,10 @@
   letter-spacing: 0.03em;
 }
 .custom-section-title {
-    font-weight: 700;
-font-size: 40px;
-line-height: 49px;
-padding: 0 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  padding: 0 30px;
   }
 .custom-prise-txt {
   font-weight: 600;
@@ -64,6 +61,11 @@ padding: 0 30px;
 .smal-txt{
   font-weight: 500;
   font-size: 12px;
+  
+}
+.smal-txt-b{
+  font-weight: 700;
+  font-size: 14px;
   
 }
 @media (max-width: 1199.98px) {

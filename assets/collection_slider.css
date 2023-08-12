@@ -7,7 +7,7 @@
     /* max-width: 600px; */
     box-sizing: border-box;
   }
-  h3 {
+  /* h3 {
     background: #fff;
     color: #3498db;
     font-size: 36px;
@@ -16,7 +16,7 @@
     padding: 2%;
     position: relative;
     text-align: center;
-  }
+  } */
   .variable-width .slick-slide p {
     background: #fff;
     /* height: 600px; */
