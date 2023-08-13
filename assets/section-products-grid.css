@@ -6,10 +6,7 @@
     'nth1 nth4 nth3'
     'nth5 nth6 nth7';
 }
-.products-grid__wrap:first-child{
-    color:  red;
-    background-color: aqua;
-    
+.products-grid__wrap:first-child{    
 }
 .nth-1{
     grid-area: nth1;
@@ -33,10 +30,10 @@
     grid-area: nth7;
 }
 .nth-2 .card-product__img-box, .nth-5 .card-product__img-box, .nth-7 .card-product__img-box{
-    background-color: #606060;
+    background-color: var(--gray-bg-slider);
 }
  .nth-3 .card-product__img-box, .nth-6 .card-product__img-box{
-    background-color: #3F3F3F;
+    background-color: var(--dark-gray-slider);
 }
 .nth-4 .card-product__img-box{
     background: linear-gradient(103.67deg, #3EB4AE -14.71%, #B3E2C0 98.34%);
@@ -147,6 +144,30 @@ margin-bottom: 8px;
 .card-product__link:hover .card-product__img {
     transform: scale(1.1); 
   }
+.card-product__info-box{
+position: relative;
+}
+.wishlist__button{
+    z-index: 10;
+    background: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.wishlist__button svg{
+    width: inherit;
+    height: inherit;
+}
+
+.wishlist__box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 60px; 
+    padding: 17px 14px 0 0;
+}
 
 @media (max-width: 952px) {
     .products-grid__wrap{
